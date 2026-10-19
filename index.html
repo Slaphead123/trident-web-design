@@ -145,7 +145,8 @@ h2{font-size:clamp(32px,4.4vw,54px);font-weight:700;max-width:14em}
 .about .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:start}
 .about h2{max-width:11em}.about p{color:rgba(255,255,255,.72);font-size:19px;margin-bottom:20px}
 .about .sig{font:600 26px var(--disp);letter-spacing:-.02em;color:#fff;margin-top:28px}.about .sig span{display:block;font:400 16px var(--body);color:rgba(255,255,255,.55);letter-spacing:0;margin-top:2px}
-.terms .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}.terms dl{display:grid;gap:0}.terms dt{border-top:1.5px solid var(--ink);padding:20px 0 4px;font:600 21px var(--disp);letter-spacing:-.02em}.terms dd{color:var(--mut);max-width:36em;padding-bottom:18px}.terms dl{border-bottom:1.5px solid var(--ink)}
+.terms .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}.terms .cost{display:grid;gap:14px;margin-top:26px}.terms .cost div{background:var(--night);color:#fff;border-radius:16px;padding:20px 24px}.terms .cost b{display:block;font:700 clamp(40px,5vw,56px)/1 var(--disp);letter-spacing:-.035em;color:var(--teal)}.terms .cost span{display:block;margin-top:8px;font-size:16px;color:rgba(255,255,255,.75)}
+.terms dl{display:grid;gap:0}.terms dt{border-top:1.5px solid var(--ink);padding:20px 0 4px;font:600 21px var(--disp);letter-spacing:-.02em}.terms dd{color:var(--mut);max-width:36em;padding-bottom:18px}.terms dl{border-bottom:1.5px solid var(--ink)}
 .faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
 details{border-top:1.5px solid var(--ink);padding:22px 0}details:last-child{border-bottom:1.5px solid var(--ink)}
 summary{cursor:pointer;font:600 21px var(--disp);letter-spacing:-.02em;list-style:none;display:flex;justify-content:space-between;gap:20px}
@@ -228,7 +229,7 @@ footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}footer h4{color
 </div></section>
 
 <section class="terms" id="terms"><div class="wrap">
-<div><h2>Plain terms</h2><p class="note">&pound;495 once, then &pound;20 a month. Prices are what you pay, with nothing added on top.</p></div>
+<div><h2>Plain terms</h2><div class="cost"><div><b>&pound;495</b><span>Once, for the website</span></div><div><b>&pound;20 a month</b><span>Hosting, domain, updates and support</span></div></div><p class="note">Prices are what you pay, with nothing added on top.</p></div>
 <dl>
 <dt>You pay nothing until you&rsquo;ve seen it live</dt><dd>I build it, you look at it on a real web address, and you only pay the &pound;495 when you&rsquo;re happy for it to stay up.</dd>
 <dt>It&rsquo;s yours</dt><dd>Your content, photos and logo stay yours. Your domain is registered in your name from day one. If you ever leave, I hand over the website files so you can take them anywhere.</dd>
