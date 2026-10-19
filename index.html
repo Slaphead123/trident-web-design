@@ -90,6 +90,9 @@ h1{font-size:clamp(38px,4.7vw,64px);font-weight:700;max-width:11em}
 .pull span{color:#fff;border:1.5px solid var(--teal);border-radius:99px;padding:6px 14px;font:600 14px var(--body);opacity:.25}
 .play .pull{animation:pullout 2s both}.play .pull span{animation:tick .3s both;animation-delay:calc(var(--i)*170ms)}
 @keyframes pullout{0%,78%{opacity:1}100%{opacity:0}}@keyframes tick{to{opacity:1;background:var(--teal);color:var(--night)}}
+.found{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px 12px;background:var(--amber);color:var(--night);border-radius:99px;padding:9px 18px 9px 10px;font:600 15px/1.25 var(--body);margin-bottom:22px}.found b{background:var(--night);color:var(--amber);border-radius:99px;padding:5px 12px;font:700 14px var(--disp);letter-spacing:.01em}
+.get2 .deal{background:var(--amber);border-color:var(--amber);color:var(--night)}.get2 .deal small{color:rgba(6,20,31,.72)}.get2 .deal b{font-size:24px}
+.final .found{background:var(--night);color:#fff;margin:0 0 22px}.final .found b{background:var(--amber);color:var(--night)}
 .get2{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr) auto;gap:14px;align-items:stretch}
 .get2 div{border:1.5px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;color:#fff}.get2 small{display:block;color:rgba(255,255,255,.6);font-size:13px}.get2 b{font:600 18px var(--disp);letter-spacing:-.02em;display:block;margin-top:2px}
 .get2 .btn{align-self:center;white-space:nowrap}
@@ -166,6 +169,7 @@ footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}footer h4{color
 <main id="top">
 <div class="hero"><div class="wrap">
 <div class="hero-copy">
+<div class="found"><b>Founding price</b><span>&pound;495 for my first 20 customers, then &pound;695</span></div>
 <h1>Your reviews are great. Your website is missing.</h1>
 <p class="lead">People check you out on their phone before they ring. I build the website that backs up your reviews, and you see it before you pay a penny.</p>
 <div class="cta"><a class="btn t" href="https://cal.com/david-shaw-us8wr0/website-walkthrough">Book a 20-minute call</a><a class="btn o" href="https://wa.me/447988034667?text=Hi%20Dave%2C%20can%20you%20make%20a%20sample%20website%20for%20my%20business%3F">WhatsApp me your business name</a></div>
@@ -183,7 +187,7 @@ footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}footer h4{color
 <div class="vp" id="vp"><iframe id="frame" title="Example website preview" src="examples/roofer/index.html"></iframe><div class="pull" id="pull" aria-hidden="true"><span style="--i:0">Name</span><span style="--i:1">Rating</span><span style="--i:2">Category</span><span style="--i:3">Reviews</span><span style="--i:4">Hours</span><span style="--i:5">Photos</span><span style="--i:6">Phone</span></div></div></div>
 </div>
 <p class="cap">Example businesses, not real ones. Yours would use your own name, reviews, photos and details.</p>
-<div class="get2" id="get2"><div><small>The website</small><b id="g-build">One-off price, agreed first</b></div><div><small>Care plan</small><b id="g-care">Small monthly plan</b></div><div><small>Included</small><b>Hosting, updates and support</b></div><a class="btn t" id="g-book" href="https://cal.com/david-shaw-us8wr0/website-walkthrough">Book a 20-minute website walkthrough</a></div>
+<div class="get2" id="get2"><div class="deal"><small>The website &middot; founding price, first 20 customers</small><b id="g-build">One-off price, agreed first</b></div><div><small>Care plan</small><b id="g-care">Small monthly plan</b></div><div><small>Included</small><b>Hosting, updates and support</b></div><a class="btn t" id="g-book" href="https://cal.com/david-shaw-us8wr0/website-walkthrough">Book a 20-minute website walkthrough</a></div>
 </div>
 </div></div>
 
@@ -246,7 +250,7 @@ footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}footer h4{color
 <details><summary>I&rsquo;d rather not be contacted again.</summary><p>Just tell me by reply, phone or WhatsApp. I&rsquo;ll delete your sample and won&rsquo;t contact you again.</p></details>
 </div></div></section>
 
-<div class="final"><div class="wrap"><h2>Want to see yours?</h2>
+<div class="final"><div class="wrap"><div class="found"><b>Founding price</b><span>&pound;495 for the first 20 customers, then &pound;695</span></div><h2>Want to see yours?</h2>
 <div class="row"><a class="btn n" href="https://cal.com/david-shaw-us8wr0/website-walkthrough">Book a 20-minute call</a><a class="ph" href="tel:07988034667">07988 034667</a></div></div></div>
 </main>
 
