@@ -91,7 +91,7 @@ h1{font-size:clamp(38px,4.7vw,64px);font-weight:700;max-width:11em}
 .play .pull{animation:pullout 2s both}.play .pull span{animation:tick .3s both;animation-delay:calc(var(--i)*170ms)}
 @keyframes pullout{0%,78%{opacity:1}100%{opacity:0}}@keyframes tick{to{opacity:1;background:var(--teal);color:var(--night)}}
 .found{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px 12px;background:var(--amber);color:var(--night);border-radius:99px;padding:9px 18px 9px 10px;font:600 15px/1.25 var(--body);margin-bottom:22px}.found b{background:var(--night);color:var(--amber);border-radius:99px;padding:5px 12px;font:700 14px var(--disp);letter-spacing:.01em}
-.get2 .deal{background:var(--amber);border-color:var(--amber);color:var(--night)}.get2 .deal small{color:rgba(6,20,31,.72)}.get2 .deal b{font-size:24px}
+.get2 .deal{background:var(--amber);border-color:var(--amber);color:var(--night)}.get2 .deal small{color:rgba(6,20,31,.72)}.get2 .deal b{font-size:24px}.get2 .deal i{display:block;font:600 14px var(--body);font-style:normal;margin-top:6px;color:rgba(6,20,31,.8)}
 .final .found{background:var(--night);color:#fff;margin:0 0 22px}.final .found b{background:var(--amber);color:var(--night)}
 .get2{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr) auto;gap:14px;align-items:stretch}
 .get2 div{border:1.5px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;color:#fff}.get2 small{display:block;color:rgba(255,255,255,.6);font-size:13px}.get2 b{font:600 18px var(--disp);letter-spacing:-.02em;display:block;margin-top:2px}
@@ -186,7 +186,7 @@ footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}footer h4{color
 <div class="vp" id="vp"><iframe id="frame" title="Example website preview" src="examples/roofer/index.html"></iframe><div class="pull" id="pull" aria-hidden="true"><span style="--i:0">Name</span><span style="--i:1">Rating</span><span style="--i:2">Category</span><span style="--i:3">Reviews</span><span style="--i:4">Hours</span><span style="--i:5">Photos</span><span style="--i:6">Phone</span></div></div></div>
 </div>
 <p class="cap">Example businesses, not real ones. Yours would use your own name, reviews, photos and details.</p>
-<div class="get2" id="get2"><div class="deal"><small>The website &middot; founding price, first 20 customers</small><b id="g-build">One-off price, agreed first</b></div><div><small>Care plan</small><b id="g-care">Small monthly plan</b></div><div><small>Included</small><b>Hosting, updates and support</b></div><a class="btn t" id="g-book" href="https://cal.com/david-shaw-us8wr0/website-walkthrough">Book a 20-minute website walkthrough</a></div>
+<div class="get2" id="get2"><div class="deal"><small>The website &middot; founding price, first 20 customers</small><b id="g-build">One-off price, agreed first</b><i>Price from customer 21: <span>&pound;695</span></i></div><div><small>Care plan</small><b id="g-care">Small monthly plan</b></div><div><small>Included</small><b>Hosting, updates and support</b></div><a class="btn t" id="g-book" href="https://cal.com/david-shaw-us8wr0/website-walkthrough">Book a 20-minute website walkthrough</a></div>
 </div>
 </div></div>
 
