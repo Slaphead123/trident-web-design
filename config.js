@@ -2,5 +2,5 @@
 window.TRIDENT={
   build:"£495 one-off",   // e.g. "£000 one-off". Blank shows "One-off price, agreed first"
   care:"£20 a month",    // e.g. "£00 a month". Blank shows "Small monthly plan"
-  bookLink:"https://cal.com/david-shaw-us8wr0/website-walkthrough"
+  bookLink:"https://cal.com/tridentwebdesign/website-walkthrough"
 };
