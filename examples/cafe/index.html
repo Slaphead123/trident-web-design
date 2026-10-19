@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Copperkettle Café | Breakfast and coffee in Ilkeston</title>
+<meta name="description" content="Cooked breakfasts, brunch, homemade cakes and proper coffee on Bath Street, Ilkeston. Dogs welcome, no booking needed.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#14382b">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Copperkettle Café (example business)","telephone":"+447700900303","servesCuisine":"Breakfast, brunch, coffee","address":{"@type":"PostalAddress","streetAddress":"8 Bath Street (example)","addressLocality":"Ilkeston","addressRegion":"Derbyshire"},"openingHours":["Mo-Fr 08:00-16:00","Sa 08:30-16:00","Su 09:00-15:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"213"}}</script>
+<style>
+@font-face{font-family:"YS";src:url(../../fonts/youngserif.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"FG";src:url(../../fonts/figtree.woff2) format("woff2");font-weight:300 900;font-display:swap}
+:root{--g:#14382b;--g2:#1d4c3a;--pink:#f7d9d0;--pink2:#fbece7;--butter:#f6c744;--bg:#fff;--ink:#17221d;--mut:#5d6a63;--line:#e8e2dc;
+ --h:"YS",Georgia,serif;--b:"FG",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:400 17px/1.65 var(--b);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;padding-bottom:64px}
+a{color:inherit}img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--g);outline-offset:3px}
+.w{max-width:1160px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--h);font-weight:400;line-height:1.08;letter-spacing:-.01em;text-wrap:balance;color:var(--g)}
+h2{font-size:clamp(32px,4.8vw,50px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;background:var(--g);color:#fff;font:700 16.5px var(--b);text-decoration:none;border:0;border-radius:999px;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--g2)}
+.btn.alt{background:#fff;color:var(--g);box-shadow:inset 0 0 0 1.5px var(--g)}.btn.alt:hover{background:var(--pink2)}
+.example{background:var(--butter);color:var(--g);font:600 13px/1.4 var(--b);text-align:center;padding:8px 14px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;gap:26px;height:70px}
+.logo{font:400 25px var(--h);color:var(--g);text-decoration:none;white-space:nowrap}
+nav{display:none;gap:26px;font:600 15px var(--b);margin-left:12px}nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--g)}
+.open{margin-left:auto;display:flex;align-items:center;gap:14px}
+.open span{display:none;font:600 14px var(--b);color:var(--mut)}.open span i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#2fb66a;margin-right:8px}
+header .btn{min-height:44px;padding:0 20px;font-size:15px;white-space:nowrap}
+@media(min-width:960px){nav{display:flex}.open span{display:block}}
+/* hero */
+.hero{background:var(--pink);overflow:hidden}
+.hero .w{display:grid;gap:40px;padding-top:44px;padding-bottom:64px}
+.hero h1{font-size:clamp(42px,7vw,76px);margin-bottom:20px}
+.hero .l{font-size:19px;color:#3d4a43;max-width:28em}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.facts{display:flex;gap:10px 22px;flex-wrap:wrap;margin-top:30px;font:600 14.5px var(--b);color:var(--g)}
+.facts span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--g);margin-right:9px;vertical-align:middle}
+.shot{position:relative}
+.shot img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:40px 40px 140px 40px}
+.sticker{position:absolute;left:-6px;bottom:22px;width:116px;height:116px;border-radius:50%;background:var(--butter);color:var(--g);display:grid;place-items:center;text-align:center;font:400 19px/1.1 var(--h);transform:rotate(-9deg);box-shadow:0 10px 24px -10px rgba(20,56,43,.5)}
+@media(min-width:960px){.hero .w{grid-template-columns:1.05fr .95fr;gap:70px;align-items:center;padding-top:56px;padding-bottom:84px}.sticker{left:-34px;width:132px;height:132px;font-size:22px}}
+/* strip */
+.strip{background:var(--g);color:#fff}
+.strip .w{display:grid;gap:14px;padding-top:22px;padding-bottom:22px}
+.strip .r{display:flex;align-items:center;gap:12px;font:600 15px/1.3 var(--b)}.strip .r b{font:400 38px/1 var(--h)}
+.strip .stars{color:var(--butter);letter-spacing:2px}
+.strip .f{font:600 15px var(--b);color:#d4e4dc;display:flex;align-items:center;gap:10px}.strip .f::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--butter)}
+@media(min-width:860px){.strip .w{grid-template-columns:1.1fr 1fr 1fr 1fr;align-items:center}}
+section{padding:92px 0}
+.sh{display:grid;gap:12px;margin-bottom:38px}.sh p{color:var(--mut);max-width:34em;font-size:18px}
+/* menu */
+.key{display:flex;gap:8px 18px;flex-wrap:wrap;font:600 14px var(--b);color:var(--mut)}
+.tg{display:inline-block;min-width:26px;text-align:center;padding:1px 7px;border-radius:6px;font:800 11.5px/1.6 var(--b);color:#fff;vertical-align:middle;margin:0 8px;position:relative;top:-1px}.key .tg{margin:0 8px 0 0}
+.tg.v{background:#2f8f55}.tg.vg{background:#1a6b3f}.tg.gf{background:#96590f}
+.board{display:grid;gap:18px}
+.cat{border-radius:26px;padding:28px;background:var(--pink2)}
+.cat:nth-child(2){background:#fdf3d4}.cat:nth-child(3){background:#e6f0ea}
+.cat h3{font-size:28px;margin-bottom:6px}
+.dish{display:grid;grid-template-columns:1fr auto;gap:0 14px;padding:15px 0;border-top:1px solid rgba(20,56,43,.15)}
+.dish:first-of-type{border-top:0}
+.dish b{font:700 17.5px var(--b);color:var(--g)}.dish .p{font:700 17px var(--b);color:var(--g)}.dish p{grid-column:1;color:var(--mut);font-size:15.5px;line-height:1.5;margin-top:2px}
+@media(min-width:900px){.board{grid-template-columns:repeat(3,1fr);align-items:start}}
+.small{font:500 13.5px/1.5 var(--b);color:var(--mut);margin-top:18px}
+/* around */
+.around{padding-top:0}
+.mos{display:grid;gap:14px}
+.mos figure{border-radius:26px;overflow:hidden;position:relative;min-height:260px;background:#ddd}
+.mos figure img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.mos figcaption{position:absolute;left:14px;bottom:14px;background:#fff;color:var(--g);font:700 14px var(--b);padding:7px 15px;border-radius:99px}
+.week{background:var(--butter);border-radius:26px;padding:30px;display:grid;gap:8px;align-content:center}
+.week h3{font-size:30px}.week p{color:#4a4116;font-size:17px}.week b{font:700 14px var(--b);color:var(--g)}
+.dog{background:var(--g);border-radius:26px;padding:30px;color:#fff;display:grid;gap:8px;align-content:center}.dog h3{color:#fff;font-size:28px}.dog p{color:#cfe0d6}
+@media(min-width:900px){.mos{grid-template-columns:repeat(6,1fr);grid-auto-rows:auto}.mos .a{grid-column:span 3;grid-row:span 2;min-height:520px}.mos .b{grid-column:span 3;min-height:250px}.mos .c{grid-column:span 3}.mos .d{grid-column:span 3}.mos .e{grid-column:span 3}}
+/* find */
+.find{background:var(--pink2)}
+.find .cols{display:grid;gap:40px}
+.hrs{background:#fff;border-radius:24px;padding:8px 26px}
+.hrs div{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);font:600 16.5px var(--b)}.hrs div:last-child{border:0}.hrs span{color:var(--mut);font-weight:500}
+.addr{margin-top:22px;font-size:17px}.addr b{font:700 18px var(--b);color:var(--g)}.addr a{font-weight:700}
+.map{margin-top:20px;border-radius:20px;border:2px dashed #cbb8ae;background:#fff;min-height:130px;display:grid;place-items:center;text-align:center;padding:16px;color:var(--mut);font:500 14.5px var(--b)}
+form{background:#fff;border-radius:26px;padding:28px;display:grid;gap:15px;align-self:start}
+form h3{font-size:28px}label{display:grid;gap:6px;font:700 14px var(--b);color:var(--g)}
+input,select{font:500 17px var(--b);padding:12px 15px;border:1.5px solid var(--line);border-radius:12px;min-height:50px;width:100%;background:#fff;color:var(--ink)}
+input:focus,select:focus{border-color:var(--g);outline:0;box-shadow:0 0 0 4px var(--pink)}
+.sent{background:#e4f4ea;color:#0f5b33;padding:13px 15px;border-radius:12px;font-size:15px;font-weight:600}.sent[hidden]{display:none}
+@media(min-width:900px){.find .cols{grid-template-columns:1fr 1fr;gap:64px}}
+/* reviews */
+.rvh{display:flex;gap:18px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;margin-bottom:32px}
+.score{display:flex;align-items:center;gap:14px}.score b{font:400 52px/1 var(--h);color:var(--g)}.score span{font:600 14px/1.35 var(--b);color:var(--mut)}.score .stars,.stars{color:#e0a400;letter-spacing:2px}
+.cards{display:grid;gap:16px}
+blockquote{background:var(--pink2);border-radius:24px;padding:28px;font:400 21px/1.4 var(--h);color:var(--g);display:grid;gap:14px;align-content:space-between}
+blockquote:nth-child(2){background:#fdf3d4}blockquote:nth-child(3){background:#e6f0ea}
+blockquote small{font:600 13.5px var(--b);color:var(--mut)}
+@media(min-width:800px){.cards{grid-template-columns:repeat(3,1fr)}}
+footer{background:var(--g);color:#cfe0d6;padding:44px 0 40px;font-size:15px}footer .w{display:grid;gap:20px}footer a{color:#fff}
+footer b{font:400 26px var(--h);color:#fff}
+.fine{border-top:1px solid #2f5d4b;padding-top:18px;font:500 13px/1.5 var(--b)}
+@media(min-width:800px){footer .w{grid-template-columns:1.2fr 1fr 1fr}.fine{grid-column:1/-1}}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;padding:8px;background:#fff;border-top:1px solid var(--line)}
+.bar a{display:grid;place-items:center;min-height:48px;font:700 15.5px var(--b);text-decoration:none;border-radius:999px;background:var(--pink2);color:var(--g)}.bar a:first-child{background:var(--g);color:#fff}
+@media(min-width:960px){.bar{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<div class="example">Example website for a fictional business, made by Trident Web Design. Yours would use your own name, reviews, photos and details.</div>
+<header><div class="w"><a class="logo" href="#top">Copperkettle</a>
+<nav aria-label="Main"><a href="#menu">Menu</a><a href="#around">This week</a><a href="#find">Find us</a><a href="#reviews">Reviews</a></nav>
+<div class="open"><span><i></i>Open today 8am to 4pm</span><a class="btn" href="tel:07700900303">Call us</a></div></div></header>
+
+<main id="top">
+<section class="hero" style="padding:0"><div class="w"><div>
+<h1>Breakfast worth getting up for.</h1>
+<p class="l">Cooked breakfasts, brunch, homemade cakes and proper coffee on Bath Street, Ilkeston. Dogs welcome, no booking needed.</p>
+<div class="row"><a class="btn" href="#menu">See the menu</a><a class="btn alt" href="#find">Find us</a></div>
+<div class="facts"><span>Open today 8am to 4pm</span><span>Brunch weekends until 2pm</span><span>Dog friendly</span></div></div>
+<div class="shot"><img src="img/benedict.webp" alt="Eggs benedict on a plate"><div class="sticker">Dogs<br>welcome</div></div>
+</div></section>
+
+<div class="strip"><div class="w"><div class="r"><b>4.8</b><span><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>213 Google reviews</span></div><div class="f">Baked on site daily</div><div class="f">Single origin on filter</div><div class="f">Beans by the bag</div></div></div>
+
+<section id="menu"><div class="w"><div class="sh"><h2>The menu</h2><div class="key"><span><span class="tg v">V</span>Vegetarian</span><span><span class="tg vg">VG</span>Vegan</span><span><span class="tg gf">GF</span>Gluten free option</span></div></div>
+<div class="board">
+<div class="cat"><h3>Breakfast</h3>
+<div class="dish"><b>Full Copperkettle</b><span class="p">&pound;00</span><p>Bacon, sausage, egg, beans, tomato, mushrooms, toast.</p></div>
+<div class="dish"><b>Eggs benedict</b><span class="p">&pound;00</span><p>Poached eggs, hollandaise, crispy bacon, avocado.</p></div>
+<div class="dish"><b>Smoked salmon and eggs</b><span class="p">&pound;00</span><p>Sourdough, avocado, two poached eggs, paprika.</p></div>
+<div class="dish"><b>Veggie breakfast<span class="tg v">V</span></b><span class="p">&pound;00</span><p>Halloumi, field mushroom, tomato, beans, egg, toast.</p></div></div>
+<div class="cat"><h3>Lunch</h3>
+<div class="dish"><b>Bacon and brie baguette</b><span class="p">&pound;00</span><p>Cranberry, rocket, crisps on the side.</p></div>
+<div class="dish"><b>Soup of the day<span class="tg v">V</span></b><span class="p">&pound;00</span><p>With buttered bread. Ask what is on today.</p></div>
+<div class="dish"><b>Cheese and onion toastie<span class="tg v">V</span></b><span class="p">&pound;00</span><p>Mature cheddar, red onion, chutney.</p></div>
+<div class="dish"><b>Smashed avocado<span class="tg vg">VG</span></b><span class="p">&pound;00</span><p>Sourdough, chilli, lemon, seeds. GF bread available.</p></div></div>
+<div class="cat"><h3>Coffee and cake</h3>
+<div class="dish"><b>Flat white</b><span class="p">&pound;00</span><p>Double shot, steamed milk. Oat, soy and almond milk too.</p></div>
+<div class="dish"><b>Latte or cappuccino</b><span class="p">&pound;00</span><p>Regular or large.</p></div>
+<div class="dish"><b>Pot of tea for one</b><span class="p">&pound;00</span><p>Loose leaf. English breakfast, Earl Grey, mint.</p></div>
+<div class="dish"><b>Cake of the day<span class="tg v">V</span></b><span class="p">&pound;00</span><p>Baked on site. Ask what is in the cabinet.</p></div></div>
+</div>
+<p class="small">Prices shown as &pound;00 are placeholders. On a real site the owner&rsquo;s own dishes and prices go here. Please tell us about any allergies when you order.</p></div></section>
+
+<section class="around" id="around"><div class="w"><div class="mos">
+<figure class="a"><img src="img/toast.webp" alt="Toast with toppings" loading="lazy"><figcaption>Brunch for two, weekends until 2pm</figcaption></figure>
+<figure class="b"><img src="img/latte.webp" alt="A latte" loading="lazy"><figcaption>Coffee, made properly</figcaption></figure>
+<div class="week c"><b>This week</b><h3>A weekly special goes here.</h3><p>Soup, a cake or a seasonal brunch. The owner can change it in one message.</p></div>
+<div class="dog d"><h3>Dog friendly</h3><p>Well-behaved dogs are welcome inside, and there is a water bowl by the door. Bring the lead.</p></div>
+<figure class="e" style="min-height:250px"><img src="img/beans.webp" alt="Coffee beans" loading="lazy" style="object-position:50% 40%"><figcaption>Beans by the bag, ground to order</figcaption></figure>
+</div>
+<p class="small">Sample photos from a stock library. On a real site these are the caf&eacute;&rsquo;s own food and rooms, from its Google listing.</p></div></section>
+
+<section class="find" id="find"><div class="w"><div class="cols"><div><h2>Find us</h2>
+<div class="hrs" style="margin-top:28px"><div>Monday to Friday<span>8am to 4pm</span></div><div>Saturday<span>8:30am to 4pm</span></div><div>Sunday<span>9am to 3pm</span></div></div>
+<p class="addr"><b>8 Bath Street, Ilkeston, Derbyshire</b> (example address)<br>Five minutes from the market place. Free parking on the street after 4pm.<br><a href="tel:07700900303">07700 900303</a> &middot; <a href="https://wa.me/447700900303?text=Hi%2C%20a%20question%20about%20the%20caf%C3%A9">WhatsApp</a></p>
+<div class="map">A map and directions would go here on a real site, from the caf&eacute;&rsquo;s Google listing.</div></div>
+<form id="f" novalidate><h3>Booking a big group?</h3><p style="color:var(--mut);margin-top:-6px">Tell us when and how many. We will ring you back.</p>
+<label>Your name<input name="n" autocomplete="name" required></label><label>Phone number<input name="p" type="tel" autocomplete="tel" required></label>
+<label>How many of you?<select name="g"><option>6 to 8</option><option>9 to 12</option><option>More than 12</option></select></label>
+<button class="btn" type="submit">Ask about a table</button>
+<p class="sent" id="sent" hidden role="status">This is an example form, so nothing was sent. On a real site it goes straight to the caf&eacute;.</p></form>
+</div></div></section>
+
+<section id="reviews"><div class="w"><div class="rvh"><h2>What people say</h2><div class="score"><b>4.8</b><span><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>213 Google reviews</span></div></div>
+<div class="cards"><blockquote>&ldquo;Best breakfast in Ilkeston. Generous portions and the coffee is spot on.&rdquo;<small>Sample review &middot; Ilkeston</small></blockquote>
+<blockquote>&ldquo;Friendly staff, lovely cakes, and they made a fuss of our dog.&rdquo;<small>Sample review &middot; Kirk Hallam</small></blockquote>
+<blockquote>&ldquo;Popped in for a quick bite and stayed an hour. Really relaxed.&rdquo;<small>Sample review &middot; Stanton by Dale</small></blockquote></div>
+<p class="small">These are invented samples. A real site shows your own Google reviews with the reviewer&rsquo;s name and date.</p></div></section>
+</main>
+<footer><div class="w"><div><b>Copperkettle Caf&eacute;</b><p>8 Bath Street, Ilkeston (example address)</p></div><div><p>Mon to Fri 8am to 4pm<br>Sat 8:30am to 4pm &middot; Sun 9am to 3pm</p></div><div><p><a href="tel:07700900303">07700 900303</a></p></div>
+<div class="fine">Fictional example business built by Trident Web Design. Photos from a stock library under the Pexels licence. Reviews, phone number and address are invented.</div></div></footer>
+<div class="bar"><a href="tel:07700900303">Call</a><a href="https://wa.me/447700900303?text=Hi%2C%20a%20question%20about%20the%20caf%C3%A9">WhatsApp</a><a href="#menu">Menu</a></div>
+<script>document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();document.getElementById('sent').hidden=false})</script>
+</body>
+</html>

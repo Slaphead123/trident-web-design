@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<link rel="preload" as="image" href="img/beard.webp">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fade &amp; Co | Barber in Arnold, Nottingham</title>
+<meta name="description" content="Skin fades, cuts, beard trims and hot towel shaves in Arnold, Nottingham. Walk-ins welcome Tuesday to Saturday, or book your chair.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#111315">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarberShop","name":"Fade & Co (example business)","telephone":"+447700900404","address":{"@type":"PostalAddress","streetAddress":"31 Front Street (example)","addressLocality":"Arnold","addressRegion":"Nottinghamshire","addressCountry":"GB"},"openingHours":["Tu-Fr 09:00-19:00","Sa 08:30-17:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"318"}}</script>
+<style>
+@font-face{font-family:"BigS";src:url(../../fonts/bigshoulders.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Plex";src:url(../../fonts/plex400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Plex";src:url(../../fonts/plex600.woff2) format("woff2");font-weight:600;font-display:swap}
+:root{--bg:#111315;--bg2:#1a1d20;--bg3:#23272b;--ink:#f1ede4;--mut:#b4b1a8;--red:#d23a2c;--redt:#ff6b5a;--line:#33393d;--gold:#d9b66b;
+ --head:"BigS","Arial Narrow",Impact,sans-serif;--body:"Plex",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:400 17px/1.65 var(--body);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;padding-bottom:64px}
+a{color:inherit}img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--redt);outline-offset:3px}
+.w{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--head);font-weight:800;line-height:.95;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+h2{font-size:clamp(40px,6vw,68px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;background:var(--red);color:#fff;font:800 20px var(--head);letter-spacing:.07em;text-transform:uppercase;text-decoration:none;border:2px solid var(--red);cursor:pointer;transition:background .15s,color .15s,border-color .15s}
+.btn:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.line{background:transparent;color:var(--ink);border-color:#5b6266}.btn.line:hover{background:var(--ink);color:var(--bg)}
+.example{background:var(--ink);color:var(--bg);font:600 13px/1.4 var(--body);text-align:center;padding:8px 14px}
+.stripe{height:10px;background:repeating-linear-gradient(135deg,var(--red) 0 14px,var(--ink) 14px 28px,#3b6aa8 28px 42px,var(--ink) 42px 56px)}
+header{background:var(--bg);position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;gap:26px;height:72px}
+.logo{font:800 32px var(--head);text-decoration:none;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}.logo i{font-style:normal;color:var(--redt)}
+nav{display:none;margin-left:auto;gap:28px;font:600 15px var(--body)}nav a{text-decoration:none;color:var(--mut)}nav a:hover{color:var(--ink)}
+header .btn{margin-left:auto;min-height:44px;padding:0 20px;font-size:18px}
+@media(min-width:900px){nav{display:flex}header .btn{margin-left:0}}
+/* hero */
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:#222 url(img/beard.webp) 70% 38%/cover}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(17,19,21,.95) 0%,rgba(17,19,21,.7) 42%,rgba(17,19,21,.1) 100%)}
+.hero .w{display:grid;gap:38px;padding-top:56px;padding-bottom:66px}
+.chip{display:inline-flex;align-items:center;gap:10px;border:1px solid #4a5156;border-radius:99px;padding:6px 15px 6px 11px;font:600 14px var(--body);background:rgba(17,19,21,.6)}
+.chip i{width:9px;height:9px;border-radius:50%;background:#38d27f;box-shadow:0 0 0 4px rgba(56,210,127,.2)}
+.hero h1{font-size:clamp(68px,12vw,150px);line-height:.84;margin:22px 0 20px}.hero h1 span{display:block;color:var(--redt)}
+.hero p.l{max-width:27em;font-size:19px;color:#e2ded5}
+.hero .rate{display:flex;align-items:center;gap:14px;margin-top:28px;font:600 15px/1.35 var(--body);color:var(--mut)}
+.stars{color:var(--gold);letter-spacing:2px;font-size:18px}.rate b{color:var(--ink)}
+/* booking card */
+.bk{background:var(--ink);color:#16181a;padding:26px;display:grid;gap:15px;box-shadow:0 30px 60px -30px #000;border-top:6px solid var(--red)}
+.bk h2{font-size:38px;color:#16181a}.bk .sub{color:#555;font-size:15px;margin-top:-8px}
+.bk legend,.bk label{font:600 14px var(--body);color:#16181a}
+.bk fieldset{border:0;padding:0;display:grid;gap:8px;min-width:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:inline-block;padding:9px 14px;border:1.5px solid #b9b5ab;font:600 14.5px var(--body);cursor:pointer;background:#fff}
+.opts input:checked+span{background:#16181a;color:#fff;border-color:#16181a}
+.opts input:focus-visible+span{outline:3px solid var(--red);outline-offset:2px}
+.bk label{display:grid;gap:6px}
+.bk input[type=text],.bk input[type=tel]{font:400 17px var(--body);padding:12px 14px;border:1.5px solid #b9b5ab;min-height:50px;width:100%;background:#fff;color:#16181a}
+.sent{background:#16181a;color:#fff;padding:12px 14px;font-size:15px}.sent[hidden]{display:none}
+@media(min-width:960px){.hero .w{grid-template-columns:1.1fr .9fr;gap:70px;align-items:center;padding-top:80px;padding-bottom:90px}}
+/* prices */
+section{padding:92px 0}
+.sh{display:grid;gap:14px;margin-bottom:38px}.sh p{color:var(--mut);max-width:32em;font-size:18px}
+.eyebrow{font:600 14px var(--body);color:var(--redt);letter-spacing:.02em}
+.board{background:var(--bg2);padding:10px 26px;border:1px solid var(--line)}
+.row{display:grid;gap:2px 18px;padding:22px 0;border-bottom:1px solid var(--line);align-items:end}
+.row:last-child{border:0}
+.row .n{display:flex;align-items:baseline;gap:12px}
+.row .n b{font:800 32px/1 var(--head);text-transform:uppercase;letter-spacing:.02em;white-space:nowrap}
+.row .n i{flex:1;border-bottom:2px dotted #5b6266;transform:translateY(-6px);min-width:20px}
+.row .n em{font:800 32px/1 var(--head);font-style:normal;color:var(--gold)}
+.row p{color:var(--mut);font-size:15.5px}.row .t{font:600 13.5px var(--body);color:var(--ink);opacity:.8}
+@media(min-width:900px){.board{padding:14px 44px}.row{grid-template-columns:1fr auto}.row .n{grid-column:1}.row p{grid-column:1}.row .t{grid-row:1/3;grid-column:2;align-self:center}}
+.small{font:500 13.5px/1.5 var(--body);color:var(--mut);margin-top:18px}
+/* barbers */
+.team{background:var(--bg2)}
+.crew{display:grid;gap:14px}
+.bb{background:var(--bg);border:1px solid var(--line);padding:24px;display:grid;gap:6px;align-content:start}
+.bb .av{width:64px;height:64px;border-radius:50%;background:var(--red);display:grid;place-items:center;font:800 28px var(--head);margin-bottom:8px}
+.bb b{font:800 28px var(--head);text-transform:uppercase;letter-spacing:.02em}.bb span{color:var(--redt);font:600 14px var(--body)}.bb p{color:var(--mut);font-size:15.5px;margin-top:4px}
+@media(min-width:760px){.crew{grid-template-columns:repeat(3,1fr)}}
+/* gallery */
+.gal{display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.gal figure{background:#222 center/cover;min-height:200px;position:relative}
+.gal .g1{background-image:url(img/chair.webp);grid-column:span 2;min-height:300px}
+.gal .g2{background-image:url(img/razor.webp);background-position:50% 35%}.gal .g3{background-image:url(img/clipper.webp)}
+.gal .g4{background-image:url(img/pole.webp)}.gal .g5{background-image:url(img/sign.webp)}
+.gal figcaption{position:absolute;left:10px;bottom:10px;background:rgba(17,19,21,.85);padding:5px 12px;font:600 13px var(--body)}
+@media(min-width:900px){.gal{grid-template-columns:repeat(4,1fr);grid-auto-rows:230px}.gal .g1{grid-column:span 2;grid-row:span 2;min-height:0}.gal figure{min-height:0}}
+/* walk in / book */
+.wb{display:grid;gap:14px}
+.box{padding:30px;display:grid;gap:12px;align-content:start;border:1px solid var(--line);background:var(--bg2)}
+.box.hot{background:var(--red);border-color:var(--red)}
+.box h3{font-size:44px}.box p{max-width:26em}.box.hot p{color:#fff}.box .btn{justify-self:start;margin-top:6px}
+.box.hot .btn{background:var(--ink);color:var(--bg);border-color:var(--ink)}.box.hot .btn:hover{background:var(--bg);color:#fff;border-color:var(--bg)}
+@media(min-width:800px){.wb{grid-template-columns:1fr 1fr}}
+/* reviews */
+.cards{display:grid;gap:14px}
+blockquote{background:var(--bg2);border:1px solid var(--line);padding:26px;font:400 18px/1.5 var(--body);display:grid;gap:14px;align-content:space-between}
+blockquote small{font:600 13.5px var(--body);color:var(--mut)}
+@media(min-width:800px){.cards{grid-template-columns:repeat(3,1fr)}}
+/* visit */
+.visit{background:var(--bg2)}
+.visit .cols{display:grid;gap:40px}
+.hrs div{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font-size:17px}.hrs span{color:var(--mut)}
+.addr{margin-top:22px;color:var(--mut)}.addr a{color:var(--ink)}
+.map{margin-top:18px;border:1.5px dashed #5b6266;padding:22px;color:var(--mut);font-size:14.5px}
+@media(min-width:900px){.visit .cols{grid-template-columns:1fr 1fr;gap:80px}}
+footer{padding:36px 0 40px;font-size:15px;color:var(--mut)}footer .w{display:grid;gap:20px}footer a{color:var(--ink)}
+.fine{border-top:1px solid var(--line);padding-top:18px;font:500 13px/1.5 var(--body)}
+@media(min-width:800px){footer .w{grid-template-columns:1.2fr 1fr 1fr}.fine{grid-column:1/-1}}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.4fr 1fr 1fr;background:var(--bg);border-top:2px solid var(--red)}
+.bar a{display:grid;place-items:center;min-height:56px;font:800 19px var(--head);letter-spacing:.07em;text-transform:uppercase;text-decoration:none}.bar a:first-child{background:var(--red)}
+@media(min-width:900px){.bar{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<div class="example">Example website for a fictional business, made by Trident Web Design. Yours would use your own name, reviews, photos and details.</div>
+<header><div class="w"><a class="logo" href="#top">Fade <i>&amp;</i> Co</a>
+<nav aria-label="Main"><a href="#prices">Prices</a><a href="#barbers">Barbers</a><a href="#shop">The shop</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav>
+<a class="btn" href="#book">Book</a></div></header>
+<div class="stripe" aria-hidden="true"></div>
+
+<main id="top">
+<section class="hero" style="padding:0"><div class="w"><div>
+<span class="chip"><i></i>Walk-ins welcome today until 7pm</span>
+<h1>Sharp <span>cuts.</span></h1>
+<p class="l">Skin fades, scissor cuts, beard trims and hot towel shaves in Arnold. Book your chair in a minute, or just walk in.</p>
+<div class="rate"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span><b>4.9 from 318 Google reviews</b><br>Tuesday to Saturday &middot; Front Street, Arnold</span></div></div>
+<form class="bk" id="book" novalidate><h2>Book a chair</h2><p class="sub">Pick a cut and a day. We text to confirm.</p>
+<fieldset><legend>Cut</legend><div class="opts"><label><input type="radio" name="c" checked><span>Skin fade</span></label><label><input type="radio" name="c"><span>Scissor cut</span></label><label><input type="radio" name="c"><span>Beard trim</span></label><label><input type="radio" name="c"><span>Cut and beard</span></label><label><input type="radio" name="c"><span>Hot towel shave</span></label></div></fieldset>
+<fieldset><legend>Day</legend><div class="opts"><label><input type="radio" name="d" checked><span>Tue</span></label><label><input type="radio" name="d"><span>Wed</span></label><label><input type="radio" name="d"><span>Thu</span></label><label><input type="radio" name="d"><span>Fri</span></label><label><input type="radio" name="d"><span>Sat</span></label></div></fieldset>
+<label>Your name<input type="text" name="n" autocomplete="name"></label><label>Phone number<input type="tel" name="p" autocomplete="tel"></label>
+<button class="btn" type="submit">Request this chair</button>
+<p class="sent" id="sent" hidden role="status">This is an example form, so nothing was sent. On a real site it goes straight to the shop.</p></form>
+</div></section>
+
+<section id="prices"><div class="w"><div class="sh"><span class="eyebrow">Prices</span><h2>Every cut ends with a hot towel and a neck shave.</h2><p>Tell us the number, or show us a photo.</p></div>
+<div class="board">
+<div class="row"><div class="n"><b>Skin fade</b><i></i><em>&pound;00</em></div><p>Zero to a skin blend, finished with a razor line.</p><span class="t">40 min</span></div>
+<div class="row"><div class="n"><b>Scissor cut</b><i></i><em>&pound;00</em></div><p>Classic and longer styles, cut by hand.</p><span class="t">40 min</span></div>
+<div class="row"><div class="n"><b>Beard trim</b><i></i><em>&pound;00</em></div><p>Shape, line-up and hot towel.</p><span class="t">20 min</span></div>
+<div class="row"><div class="n"><b>Cut and beard</b><i></i><em>&pound;00</em></div><p>Any cut with a beard trim.</p><span class="t">55 min</span></div>
+<div class="row"><div class="n"><b>Hot towel shave</b><i></i><em>&pound;00</em></div><p>Straight razor, hot towels, oil.</p><span class="t">30 min</span></div>
+<div class="row"><div class="n"><b>Kids under 12</b><i></i><em>&pound;00</em></div><p>Cut and tidy.</p><span class="t">25 min</span></div></div>
+<p class="small">Prices shown as &pound;00 are placeholders. For a real client the owner&rsquo;s own services and prices go here.</p></div></section>
+
+<section class="team" id="barbers"><div class="w"><div class="sh"><span class="eyebrow">The barbers</span><h2>Who is on your chair.</h2></div>
+<div class="crew"><div class="bb"><div class="av">J</div><b>Jay</b><span>Skin fades &middot; 9 years</span><p>Sharp blends and razor lines. Booked up on Saturdays.</p></div><div class="bb"><div class="av">M</div><b>Marcus</b><span>Scissor cuts &middot; 6 years</span><p>Longer styles and kids. Takes his time and it shows.</p></div><div class="bb"><div class="av">D</div><b>Danny</b><span>Beards and shaves &middot; 12 years</span><p>Hot towel shaves and beard shaping.</p></div></div>
+<p class="small">Sample team. A real site has the shop&rsquo;s own barbers, with their photos and specialities.</p></div></section>
+
+<section id="shop"><div class="w"><div class="sh"><span class="eyebrow">The shop</span><h2>Clean, quiet, proper.</h2></div>
+<div class="gal"><figure class="g1" role="img" aria-label="Barber chair"><figcaption>The chair</figcaption></figure><figure class="g2" role="img" aria-label="Straight razor"><figcaption>Straight razor</figcaption></figure><figure class="g3" role="img" aria-label="Clippers"><figcaption>Clean lines</figcaption></figure><figure class="g4" role="img" aria-label="Barber pole"></figure><figure class="g5" role="img" aria-label="Shop sign"></figure></div>
+<p class="small">Sample photos from a stock library. On a real site these are the shop&rsquo;s own, from its Google listing or Instagram.</p></div></section>
+
+<section style="padding-top:0"><div class="w"><div class="wb">
+<div class="box"><h3>Walk in</h3><p>Walk-ins Tuesday to Friday, first come first served. Check the wait before you leave the house.</p><a class="btn line" href="tel:07700900404">Ring for the wait</a></div>
+<div class="box hot"><h3>Book ahead</h3><p>Saturdays fill up. Pick your day and we hold your chair.</p><a class="btn" href="#book">Book a chair</a></div></div></div></section>
+
+<section class="team" id="reviews"><div class="w"><div class="sh"><span class="eyebrow">Reviews</span><h2>What the chair says.</h2><p><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 from 318 Google reviews</p></div>
+<div class="cards"><blockquote>&ldquo;Best fade I have had in years. In and out in 40 minutes and it still looks sharp two weeks on.&rdquo;<small>Sample review &middot; Arnold</small></blockquote>
+<blockquote>&ldquo;Brought my son in for his first proper cut. Patient, friendly and he loved it.&rdquo;<small>Sample review &middot; Bestwood</small></blockquote>
+<blockquote>&ldquo;Hot towel shave is a proper treat. Spotless shop, good music.&rdquo;<small>Sample review &middot; Daybrook</small></blockquote></div>
+<p class="small">These are invented samples. A real site shows your own Google reviews with the reviewer&rsquo;s name and date.</p></div></section>
+
+<section class="visit" id="visit" style="background:var(--bg)"><div class="w cols"><div><div class="sh" style="margin-bottom:20px"><span class="eyebrow">Visit</span><h2>Find the shop.</h2></div>
+<div class="hrs"><div>Monday<span>Closed</span></div><div>Tuesday to Friday<span>9am to 7pm</span></div><div>Saturday<span>8:30am to 5pm</span></div><div>Sunday<span>Closed</span></div></div></div>
+<div><p class="addr">31 Front Street, Arnold, Nottingham (example address)<br><a href="tel:07700900404">07700 900404</a> &middot; <a href="https://wa.me/447700900404?text=Hi%2C%20can%20I%20book%20a%20chair">WhatsApp</a></p><div class="map">A map and directions would go here on a real site, from the shop&rsquo;s Google listing.</div></div></div></section>
+</main>
+<footer><div class="w"><div><b style="font:800 24px var(--head);color:var(--ink);text-transform:uppercase;letter-spacing:.04em">Fade &amp; Co</b><p>31 Front Street, Arnold (example address)</p></div><div><p>Tue to Fri 9am to 7pm<br>Sat 8:30am to 5pm</p></div><div><p><a href="tel:07700900404">07700 900404</a></p></div>
+<div class="fine">Fictional example business built by Trident Web Design. Photos from a stock library under the Pexels licence. Reviews, phone number, barbers and address are invented.</div></div></footer>
+<div class="bar"><a href="tel:07700900404">Call</a><a href="https://wa.me/447700900404?text=Hi%2C%20can%20I%20book%20a%20chair">WhatsApp</a><a href="#book">Book</a></div>
+<script>document.getElementById('book').addEventListener('submit',function(e){e.preventDefault();document.getElementById('sent').hidden=false})</script>
+</body>
+</html>

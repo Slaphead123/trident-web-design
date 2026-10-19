@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="data:,">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Redline Mobile Mechanics | Mobile mechanic in Nottingham</title>
+<meta name="description" content="Mobile mechanic in Nottingham. Servicing, brakes, diagnostics and repairs on your drive, with a fixed price before we start.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#14181f">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"AutoRepair","name":"Redline Mobile Mechanics (example business)","telephone":"+447700900707","areaServed":["Nottingham","Beeston","West Bridgford","Arnold"],"openingHours":["Mo-Fr 07:30-18:30","Sa 08:00-14:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"176"}}</script>
+<style>
+@font-face{font-family:"BG";src:url(../../fonts/bricolage.woff2) format("woff2");font-weight:200 800;font-display:swap}
+@font-face{font-family:"IT";src:url(../../fonts/intertight.woff2) format("woff2");font-weight:100 900;font-display:swap}
+:root{--ink:#14181f;--ink2:#1d232c;--bg:#fff;--soft:#f3f4f6;--mut:#5b6472;--line:#e4e7ec;--red:#c82b20;--red2:#a8221a;--on:#aeb7c4;
+ --h:"BG","IT",system-ui,sans-serif;--b:"IT",system-ui,-apple-system,"Segoe UI",sans-serif}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font:400 17px/1.6 var(--b);color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;padding-bottom:64px}
+a{color:inherit}img{display:block;max-width:100%}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.w{max-width:1180px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:var(--h);font-weight:700;line-height:1.04;letter-spacing:-.025em;text-wrap:balance}
+h2{font-size:clamp(30px,4.6vw,48px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;background:var(--red);color:#fff;font:700 16.5px var(--b);text-decoration:none;border:0;border-radius:10px;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--red2)}
+.btn.out{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor}.btn.out:hover{background:rgba(255,255,255,.1)}
+.example{background:var(--red);color:#fff;font:600 13px/1.4 var(--b);text-align:center;padding:8px 14px}
+header{background:var(--ink);color:#fff;position:sticky;top:0;z-index:20}
+header .w{display:flex;align-items:center;gap:28px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font:800 22px var(--h);text-decoration:none;letter-spacing:-.02em;white-space:nowrap}
+.logo i{width:30px;height:30px;border-radius:8px;background:var(--red);display:grid;place-items:center}.logo svg{width:18px;height:18px}
+nav{display:none;gap:26px;font:500 15px var(--b);margin-left:10px}nav a{text-decoration:none;color:var(--on)}nav a:hover{color:#fff}
+header .tel{margin-left:auto;display:flex;gap:16px;align-items:center;font:700 16px var(--b)}header .tel a.n{display:none;text-decoration:none}
+header .btn{min-height:42px;padding:0 18px;font-size:15px;white-space:nowrap}
+@media(min-width:960px){nav{display:flex}header .tel a.n{display:block}}
+/* hero */
+.hero{position:relative;background:var(--ink);color:#fff;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-2;background:url(img/engine.webp) 72% 50%/cover no-repeat}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(20,24,31,.95) 0%,rgba(20,24,31,.78) 42%,rgba(20,24,31,.3) 100%)}
+.hero .w{display:grid;gap:36px;padding-top:50px;padding-bottom:64px}
+.tag{display:inline-flex;align-items:center;gap:9px;background:rgba(255,255,255,.1);border-radius:99px;padding:7px 15px 7px 11px;font:600 14px var(--b);color:#e8ecf2}
+.tag i{width:9px;height:9px;border-radius:50%;background:#35d07f}
+.hero h1{font-size:clamp(40px,6vw,68px);margin:20px 0 18px}
+.hero .l{font-size:19px;color:#c6cdd8;max-width:30em}
+.ticks{list-style:none;padding:0;display:grid;gap:9px;margin-top:26px;font:600 16px var(--b)}
+.ticks li{display:flex;gap:11px;align-items:center}.ticks li::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 12.5 4 4 8-9'/%3E%3C/svg%3E") center/14px no-repeat}
+/* quote card */
+.qc{background:#fff;color:var(--ink);border-radius:20px;padding:26px;display:grid;gap:15px;box-shadow:0 30px 70px -30px rgba(0,0,0,.7)}
+.qc h2{font-size:26px;letter-spacing:-.02em}.qc .sub{color:var(--mut);font-size:15px;margin-top:-8px}
+label{display:grid;gap:6px;font:700 14px var(--b)}
+input,select{font:500 17px var(--b);padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;min-height:50px;width:100%;background:#fff;color:var(--ink)}
+input:focus,select:focus{border-color:var(--ink);outline:0;box-shadow:0 0 0 4px #e9ecf1}
+.plate{display:flex;border-radius:8px;overflow:hidden;border:2px solid #14181f;background:#fcd116}
+.plate b{flex:none;width:34px;background:#1b3ea6;color:#fcd116;display:grid;place-items:end center;padding-bottom:5px;font:800 11px var(--b)}
+.plate input{border:0;border-radius:0;background:transparent;font:800 26px var(--h);letter-spacing:.06em;text-transform:uppercase;text-align:center;min-height:54px;box-shadow:none}
+.plate input::placeholder{color:#14181f99}
+.row2{display:grid;gap:12px}@media(min-width:420px){.row2{grid-template-columns:1fr 1fr}}
+.sent{background:#e4f8ee;color:#0b6b40;padding:12px 14px;border-radius:10px;font-size:15px;font-weight:600}.sent[hidden]{display:none}
+@media(min-width:960px){.hero .w{grid-template-columns:1.15fr .85fr;gap:70px;align-items:center;padding-top:76px;padding-bottom:84px}}
+/* trust */
+.trust{border-bottom:1px solid var(--line)}
+.trust .w{display:grid;gap:12px;padding-top:24px;padding-bottom:24px}
+.trust .c{display:flex;gap:13px;align-items:center;border:1.5px dashed #c9cfd9;border-radius:12px;padding:13px 16px}
+.trust .c b{display:block;font:700 15.5px/1.25 var(--b)}.trust .c span{font:500 13px/1.3 var(--b);color:var(--mut)}
+.trust .rate{display:flex;align-items:center;gap:14px}.rate strong{font:800 44px/1 var(--h);letter-spacing:-.03em}.rate small{font:600 14px/1.35 var(--b);color:var(--mut)}
+.stars{color:#f5a623;letter-spacing:2px}
+@media(min-width:860px){.trust .w{grid-template-columns:1.1fr 1fr 1fr 1fr;align-items:center}}
+section{padding:92px 0}
+.sh{display:grid;gap:12px;margin-bottom:38px}.sh p{color:var(--mut);max-width:34em;font-size:18px}
+.eyebrow{font:700 14px var(--b);color:var(--red)}
+/* services list */
+.sv{display:grid;gap:34px}
+.sv .ph{border-radius:22px;overflow:hidden;min-height:260px;background:#222 url(img/wheel.webp) 50% 50%/cover}
+.list{border-top:1.5px solid var(--ink)}
+.it{display:grid;gap:4px 20px;padding:22px 0;border-bottom:1px solid var(--line);align-items:center}
+.it b{font:700 21px var(--h);letter-spacing:-.015em}.it p{color:var(--mut);font-size:15.5px;line-height:1.5}
+.it .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:6px}
+.chip{background:var(--soft);border-radius:99px;padding:4px 12px;font:600 13px var(--b);color:#3a4350}
+.it .pr{font:600 14px var(--b);color:var(--mut)}.it .pr strong{display:block;font:800 26px/1.1 var(--h);color:var(--ink)}
+@media(min-width:640px){.it{grid-template-columns:1fr auto}.it .pr{text-align:right}}
+@media(min-width:1000px){.sv{grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}.sv .ph{position:sticky;top:96px;min-height:560px}}
+.small{font:500 13.5px/1.5 var(--b);color:var(--mut);margin-top:18px}
+/* why */
+.why{background:var(--soft)}
+.why .cols{display:grid;gap:40px}
+.perks{display:grid;gap:16px}.perk{background:#fff;border-radius:16px;padding:22px}
+.perk b{font:700 20px var(--h);display:block;margin-bottom:4px;letter-spacing:-.015em}.perk p{color:var(--mut);font-size:16px}
+.pics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pics figure{border-radius:18px;overflow:hidden;background:#222;min-height:240px;position:relative}
+.pics figure.a{background:url(img/dipstick.webp) 50% 40%/cover;grid-row:span 2;min-height:420px}
+.pics figure.b{background:url(img/engine.webp) 40% 50%/cover}
+.pics figcaption{position:absolute;left:10px;bottom:10px;background:rgba(20,24,31,.82);color:#fff;font:600 13px var(--b);padding:5px 11px;border-radius:99px}
+@media(min-width:960px){.why .cols{grid-template-columns:1fr 1fr;gap:64px;align-items:center}.perks{grid-template-columns:1fr 1fr}}
+/* how */
+.how{background:var(--ink);color:#fff}
+.how h2{max-width:14em}
+.steps{display:grid;gap:14px;margin-top:38px;counter-reset:s}
+.step{background:var(--ink2);border-radius:18px;padding:26px;display:grid;gap:8px;align-content:start}
+.step::before{counter-increment:s;content:"Step " counter(s);font:700 13.5px var(--b);color:#ff8d84}
+.step b{font:700 23px var(--h);letter-spacing:-.015em}.step p{color:var(--on);font-size:16px}
+@media(min-width:860px){.steps{grid-template-columns:repeat(4,1fr)}}
+/* report */
+.rep .cols{display:grid;gap:40px}
+.rcard{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 24px 50px -30px rgba(20,24,31,.4);overflow:hidden;max-width:460px}
+.rcard .hd{display:flex;justify-content:space-between;align-items:center;background:var(--soft);padding:14px 20px;font:700 14px var(--b);color:var(--mut)}
+.rcard .hd b{background:#e4f8ee;color:#0b6b40;border-radius:99px;padding:3px 12px;font-size:13px}
+.rcard .bd{padding:20px;display:grid;gap:14px}
+.rcard .car{display:flex;gap:14px;align-items:center;flex-wrap:wrap}.rcard .car .plate{width:150px}.rcard .car .plate span{flex:1;text-align:center;font:800 19px/40px var(--h);letter-spacing:.06em}
+.rcard .car small{font:600 14px/1.3 var(--b);color:var(--mut)}
+.rcard ul{list-style:none;padding:0;display:grid;gap:0}.rcard li{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-top:1px solid var(--line);font:500 15.5px var(--b)}.rcard li span{color:var(--mut);white-space:nowrap}
+.rcard .nx{background:var(--tintr,#fdecea);border-radius:10px;padding:12px 14px;font:600 14.5px var(--b);color:#8f2118}
+@media(min-width:960px){.rep .cols{grid-template-columns:1fr 1fr;gap:80px;align-items:center}.rcard{justify-self:end}}
+.rep .cols>div>p{color:var(--mut);margin-top:14px;max-width:30em;font-size:18px}
+/* areas */
+.areas{background:var(--soft)}
+.pc{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}.pc span{background:#fff;border-radius:8px;padding:7px 13px;font:700 14.5px var(--b);letter-spacing:.03em}
+.towns{display:flex;flex-wrap:wrap;gap:8px 20px;margin-top:22px;color:var(--mut);font-weight:500}
+.areas .cols{display:grid;gap:26px}@media(min-width:900px){.areas .cols{grid-template-columns:.8fr 1.2fr;gap:70px}}
+/* reviews */
+.rvh{display:flex;gap:18px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;margin-bottom:32px}
+.cards{display:grid;gap:16px}
+blockquote{border:1px solid var(--line);border-radius:18px;padding:26px;font:500 18px/1.5 var(--b);display:grid;gap:14px;align-content:space-between}
+blockquote small{font:600 13.5px var(--b);color:var(--mut)}
+@media(min-width:800px){.cards{grid-template-columns:repeat(3,1fr)}}
+/* faq */
+.faq{background:var(--soft)}
+.faq .cols{display:grid;gap:30px}@media(min-width:900px){.faq .cols{grid-template-columns:.75fr 1.25fr;gap:80px}}
+details{border-bottom:1px solid #d6dae2;padding:20px 0}details:first-child{border-top:1px solid #d6dae2}
+summary{cursor:pointer;font:700 19px/1.35 var(--b);list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;width:32px;height:32px;border-radius:50%;background:#fff;display:grid;place-items:center;font:500 22px/1 var(--b);color:var(--red)}
+details[open] summary::after{content:"\2212"}
+details p{margin-top:10px;color:var(--mut);max-width:38em}
+/* contact */
+.ct{background:var(--ink);color:#fff;border-radius:28px;padding:36px 26px;display:grid;gap:30px}
+.ct h2{color:#fff}.ct .big{font:800 clamp(34px,6vw,54px)/1 var(--h);display:block;margin-top:22px;text-decoration:none;letter-spacing:-.03em}
+.ct .btn{margin-top:20px}
+.hrs{display:grid;gap:0;font:500 16px var(--b);align-content:center}.hrs div{display:flex;justify-content:space-between;gap:16px;padding:13px 0;border-bottom:1px solid #2c3441}.hrs div:last-child{border:0}.hrs span{color:var(--on)}
+@media(min-width:900px){.ct{grid-template-columns:1.2fr .8fr;padding:56px;gap:70px}}
+footer{padding:36px 0 40px;font-size:15px;color:var(--mut)}footer .w{display:grid;gap:20px}footer a{color:var(--ink)}
+.fine{border-top:1px solid var(--line);padding-top:18px;font:500 13px/1.5 var(--b)}
+@media(min-width:800px){footer .w{grid-template-columns:1.2fr 1fr 1fr}.fine{grid-column:1/-1}}
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:8px;padding:8px;background:var(--ink)}
+.bar a{display:grid;place-items:center;min-height:48px;font:700 15.5px var(--b);text-decoration:none;border-radius:10px;background:#2a313c;color:#fff}.bar a:first-child{background:var(--red)}
+@media(min-width:960px){.bar{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+<div class="example">Example website for a fictional business, made by Trident Web Design. Yours would use your own name, reviews, photos and details.</div>
+<header><div class="w"><a class="logo" href="#top"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16a8 8 0 1 1 16 0"/><path d="m12 16 4-5"/></svg></i>Redline</a>
+<nav aria-label="Main"><a href="#services">Services</a><a href="#how">How it works</a><a href="#areas">Where we go</a><a href="#reviews">Reviews</a><a href="#faq">Questions</a></nav>
+<div class="tel"><a class="n" href="tel:07700900707">07700 900707</a><a class="btn" href="#quote">Get a price</a></div></div></header>
+
+<main id="top">
+<section class="hero" style="padding:0"><div class="w"><div>
+<span class="tag"><i></i>Booking this week &middot; Mon to Sat</span>
+<h1>Mobile mechanic in Nottingham. We come to your drive.</h1>
+<p class="l">Servicing, brakes, diagnostics and repairs at your home or workplace. No garage trip, no day off, and a fixed price before we start.</p>
+<ul class="ticks"><li>Fixed price quoted before we book</li><li>Parts and labour guaranteed</li><li>Written record after every job</li></ul></div>
+<form class="qc" id="quote" novalidate><h2>Get a price</h2><p class="sub">Takes a minute. We reply the same day.</p>
+<label>Your reg<span class="plate"><b>GB</b><input name="r" placeholder="AB12 CDE" autocomplete="off" maxlength="8" aria-label="Number plate"></span></label>
+<div class="row2"><label>Postcode<input name="pc" placeholder="NG1 1AA" autocomplete="postal-code"></label><label>Phone<input name="p" type="tel" autocomplete="tel" placeholder="07..."></label></div>
+<label>What does it need?<select name="w"><option>Interim service</option><option>Full service</option><option>Brakes</option><option>Warning light or diagnostics</option><option>Battery</option><option>Pre-MOT check</option><option>Not sure</option></select></label>
+<button class="btn" type="submit">Get my price</button>
+<p class="sent" id="sent" hidden role="status">This is an example form, so nothing was sent. On a real site it goes straight to the mechanic.</p></form>
+</div></section>
+
+<div class="trust"><div class="w">
+<div class="rate"><strong>4.8</strong><small><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>176 Google reviews</small></div>
+<div class="c"><div><b>Warranty</b><span>Owner adds warranty terms</span></div></div>
+<div class="c"><div><b>Fully insured</b><span>Owner adds cover details</span></div></div>
+<div class="c"><div><b>Qualified</b><span>Owner adds training</span></div></div>
+</div></div>
+
+<section id="services"><div class="w"><div class="sh"><span class="eyebrow">Services</span><h2>Clear prices for the jobs people book most.</h2><p>Times are typical for a standard car, done on your drive. Prices are placeholders that the owner sets.</p></div>
+<div class="sv"><div class="ph" role="img" aria-label="Mechanic checking a wheel"></div><div><div class="list">
+<div class="it"><div><b>Interim service</b><p>Oil and filter, fluid levels, brake and tyre check.</p><div class="meta"><span class="chip">About 1 hr</span><span class="chip">Every 6 months or 6,000 miles</span></div></div><div class="pr">from<strong>&pound;00</strong></div></div>
+<div class="it"><div><b>Full service</b><p>Interim, plus air and cabin filters and spark plugs where due.</p><div class="meta"><span class="chip">About 2 hrs</span><span class="chip">Every 12 months or 12,000 miles</span></div></div><div class="pr">from<strong>&pound;00</strong></div></div>
+<div class="it"><div><b>Brake pads and discs</b><p>Front or rear, with parts included.</p><div class="meta"><span class="chip">About 1.5 hrs</span><span class="chip">When they squeal or wear thin</span></div></div><div class="pr">from<strong>&pound;00</strong></div></div>
+<div class="it"><div><b>Diagnostics</b><p>Warning light read, fault traced, price to fix.</p><div class="meta"><span class="chip">About 45 min</span><span class="chip">When a dashboard light stays on</span></div></div><div class="pr">from<strong>&pound;00</strong></div></div>
+<div class="it"><div><b>Battery replacement</b><p>Tested, supplied and fitted.</p><div class="meta"><span class="chip">About 30 min</span><span class="chip">Typically every 4 to 5 years</span></div></div><div class="pr">from<strong>&pound;00</strong></div></div>
+<div class="it"><div><b>Pre-MOT check</b><p>We check the usual fail points before your test.</p><div class="meta"><span class="chip">About 30 min</span><span class="chip">A week or two before the MOT</span></div></div><div class="pr">from<strong>&pound;00</strong></div></div>
+</div><p class="small">Prices shown as &pound;00 and the times above are placeholders. For a real client the owner&rsquo;s own services, intervals and prices go here.</p></div></div></div></section>
+
+<section class="why"><div class="w"><div class="cols"><div><div class="sh" style="margin-bottom:26px"><span class="eyebrow">Why on your drive</span><h2>The garage visit, taken out.</h2></div>
+<div class="perks"><div class="perk"><b>No day off</b><p>Work from home or at the office while we get on with it.</p></div><div class="perk"><b>Price first</b><p>The quote is agreed before we book, and we ask before anything changes.</p></div><div class="perk"><b>See the work</b><p>We show you the old parts and what we found.</p></div><div class="perk"><b>Proper kit</b><p>A fully equipped van, so most jobs are done in one visit.</p></div></div></div>
+<div class="pics"><figure class="a"><figcaption>Checking the oil</figcaption></figure><figure class="b"><figcaption>Under the bonnet</figcaption></figure><figure class="b" style="background-image:url(img/wheel.webp);background-position:50% 60%"><figcaption>Wheels off</figcaption></figure></div></div>
+<p class="small">Sample photos from a stock library. On a real site these are the mechanic&rsquo;s own jobs, from the Google listing or their phone.</p></div></section>
+
+<section class="how" id="how"><div class="w"><span class="eyebrow" style="color:#ff8d84">How it works</span><h2 style="margin-top:12px">Booked in a minute, done on your drive.</h2>
+<div class="steps"><div class="step"><b>Send your reg</b><p>Tell us the car and what it needs.</p></div><div class="step"><b>Get a price</b><p>A fixed quote before we book a slot.</p></div><div class="step"><b>We come to you</b><p>Home or work. Most jobs take an hour or two.</p></div><div class="step"><b>Pay and keep the record</b><p>Pay when it is done and get the written report.</p></div></div></div></section>
+
+<section class="rep"><div class="w"><div class="cols"><div><span class="eyebrow">After every job</span><h2 style="margin-top:12px">You get a written record of the work.</h2><p>What we did, what we found and what is due next. Keep it with the car, and it helps when you sell.</p></div>
+<div class="rcard"><div class="hd"><span>Job record (example)</span><b>Done</b></div><div class="bd"><div class="car"><span class="plate"><b>GB</b><span>AB12 CDE</span></span><small>Ford Fiesta 1.0<br>84,210 miles &middot; Sat 14 Mar</small></div>
+<ul><li>Oil and filter changed<span>Done</span></li><li>Brakes checked<span>Front pads 6mm</span></li><li>Tyres<span>4mm, even wear</span></li></ul><div class="nx">Next service due at 90,200 miles</div></div></div></div></div></section>
+
+<section class="areas" id="areas"><div class="w"><div class="cols"><div><span class="eyebrow">Where we go</span><h2 style="margin-top:12px">Around 12 miles from the city centre.</h2><p style="color:var(--mut);margin-top:14px">On the edge of the area? Ask. We can usually still help.</p></div>
+<div><div class="pc"><span>NG1</span><span>NG2</span><span>NG3</span><span>NG5</span><span>NG6</span><span>NG7</span><span>NG8</span><span>NG9</span><span>NG10</span><span>NG11</span><span>NG12</span><span>NG14</span><span>NG15</span><span>NG16</span></div>
+<div class="towns"><span>Nottingham</span><span>Beeston</span><span>West Bridgford</span><span>Arnold</span><span>Carlton</span><span>Hucknall</span><span>Long Eaton</span><span>Ruddington</span><span>Bulwell</span><span>Clifton</span></div></div></div></div></section>
+
+<section id="reviews"><div class="w"><div class="rvh"><div><span class="eyebrow">Reviews</span><h2 style="margin-top:10px">Customers on the service.</h2></div><div class="rate" style="display:flex;align-items:center;gap:14px"><strong style="font:800 48px/1 var(--h)">4.8</strong><small style="font:600 14px/1.35 var(--b);color:var(--mut)"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span><br>176 Google reviews</small></div></div>
+<div class="cards"><blockquote>&ldquo;Brakes done on my drive while I worked from home. Price matched the quote exactly.&rdquo;<small>Sample review &middot; West Bridgford</small></blockquote>
+<blockquote>&ldquo;Warning light sorted in under an hour. Explained what was wrong and showed me the part.&rdquo;<small>Sample review &middot; Beeston</small></blockquote>
+<blockquote>&ldquo;Booked a service for the morning, finished before lunch. Really convenient.&rdquo;<small>Sample review &middot; Arnold</small></blockquote></div>
+<p class="small">These are invented samples. A real site shows your own Google reviews with the reviewer&rsquo;s name and date.</p></div></section>
+
+<section class="faq" id="faq"><div class="w"><div class="cols"><h2>Common questions</h2><div>
+<details><summary>Do I need to be there?</summary><p>For most jobs we only need the keys at the start and finish. Many customers leave the car at work or on the drive.</p></details>
+<details><summary>Can you work on any car?</summary><p>Most makes and models. Send your reg and we will tell you if we can do it.</p></details>
+<details><summary>What if it rains?</summary><p>We can work in most weather. For bigger jobs we agree a back-up day.</p></details>
+<details><summary>Are the parts guaranteed?</summary><p>On a real site the owner states their own warranty terms here.</p></details>
+</div></div></div></section>
+
+<section style="padding:92px 0 60px"><div class="w"><div class="ct"><div><h2>Book a visit.</h2><p style="color:var(--on);margin-top:12px;max-width:26em">Ring, message, or fill in the form at the top of the page.</p><a class="big" href="tel:07700900707">07700 900707</a><a class="btn" href="https://wa.me/447700900707?text=Hi%2C%20my%20reg%20is">Send your reg on WhatsApp</a></div>
+<div class="hrs"><div>Monday to Friday<span>7:30am to 6:30pm</span></div><div>Saturday<span>8am to 2pm</span></div><div>Sunday<span>Closed</span></div></div></div></div></section>
+</main>
+<footer><div class="w"><div><b style="font:700 20px var(--h);color:var(--ink)">Redline Mobile Mechanics</b><p>Based in Nottingham (example business)</p></div><div><p>Mon to Fri 7:30am to 6:30pm<br>Sat 8am to 2pm</p></div><div><p><a href="tel:07700900707">07700 900707</a></p></div>
+<div class="fine">Fictional example business built by Trident Web Design. Reviews, phone number and area are invented. Photos from a stock library under the Pexels licence.</div></div></footer>
+<div class="bar"><a href="tel:07700900707">Call now</a><a href="https://wa.me/447700900707?text=Hi%2C%20my%20reg%20is">WhatsApp</a><a href="#quote">Price</a></div>
+<script>
+document.getElementById('quote').addEventListener('submit',function(e){e.preventDefault();document.getElementById('sent').hidden=false})
+</script>
+</body>
+</html>
