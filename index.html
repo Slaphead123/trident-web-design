@@ -90,9 +90,6 @@ h1{font-size:clamp(38px,4.7vw,64px);font-weight:700;max-width:11em}
 .pull span{color:#fff;border:1.5px solid var(--teal);border-radius:99px;padding:6px 14px;font:600 14px var(--body);opacity:.25}
 .play .pull{animation:pullout 2s both}.play .pull span{animation:tick .3s both;animation-delay:calc(var(--i)*170ms)}
 @keyframes pullout{0%,78%{opacity:1}100%{opacity:0}}@keyframes tick{to{opacity:1;background:var(--teal);color:var(--night)}}
-.found{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px 12px;background:var(--amber);color:var(--night);border-radius:99px;padding:9px 18px 9px 10px;font:600 15px/1.25 var(--body);margin-bottom:22px}.found b{background:var(--night);color:var(--amber);border-radius:99px;padding:5px 12px;font:700 14px var(--disp);letter-spacing:.01em}
-.get2 .deal{background:var(--amber);border-color:var(--amber);color:var(--night)}.get2 .deal small{color:rgba(6,20,31,.72)}.get2 .deal b{font-size:24px}
-.final .found{background:var(--night);color:#fff;margin:0 0 22px}.final .found b{background:var(--amber);color:var(--night)}
 .get2{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr) auto;gap:14px;align-items:stretch}
 .get2 div{border:1.5px solid rgba(255,255,255,.2);border-radius:14px;padding:16px 18px;color:#fff}.get2 small{display:block;color:rgba(255,255,255,.6);font-size:13px}.get2 b{font:600 18px var(--disp);letter-spacing:-.02em;display:block;margin-top:2px}
 .get2 .btn{align-self:center;white-space:nowrap}
@@ -186,7 +183,7 @@ footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}footer h4{color
 <div class="vp" id="vp"><iframe id="frame" title="Example website preview" src="examples/roofer/index.html"></iframe><div class="pull" id="pull" aria-hidden="true"><span style="--i:0">Name</span><span style="--i:1">Rating</span><span style="--i:2">Category</span><span style="--i:3">Reviews</span><span style="--i:4">Hours</span><span style="--i:5">Photos</span><span style="--i:6">Phone</span></div></div></div>
 </div>
 <p class="cap">Example businesses, not real ones. Yours would use your own name, reviews, photos and details.</p>
-<div class="get2" id="get2"><div class="deal"><small>The website &middot; founding price, first 20 customers</small><b id="g-build">One-off price, agreed first</b></div><div><small>Care plan</small><b id="g-care">Small monthly plan</b></div><div><small>Included</small><b>Hosting, updates and support</b></div><a class="btn t" id="g-book" href="https://cal.com/david-shaw-us8wr0/website-walkthrough">Book a 20-minute website walkthrough</a></div>
+<div class="get2" id="get2"><div><small>The website</small><b id="g-build">One-off price, agreed first</b></div><div><small>Care plan</small><b id="g-care">Small monthly plan</b></div><div><small>Included</small><b>Hosting, updates and support</b></div><a class="btn t" id="g-book" href="https://cal.com/david-shaw-us8wr0/website-walkthrough">Book a 20-minute website walkthrough</a></div>
 </div>
 </div></div>
 
@@ -229,7 +226,7 @@ footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}footer h4{color
 </div></section>
 
 <section class="terms" id="terms"><div class="wrap">
-<div><h2>Plain terms</h2><p class="note">&pound;495 once, then &pound;20 a month. Prices are what you pay, with nothing added on top.</p><p class="note"><b>Founding price for the first 20 customers.</b> After that the build is &pound;695. Founding customers keep the &pound;20 monthly price for as long as they stay.</p></div>
+<div><h2>Plain terms</h2><p class="note">&pound;495 once, then &pound;20 a month. Prices are what you pay, with nothing added on top.</p></div>
 <dl>
 <dt>You pay nothing until you&rsquo;ve seen it live</dt><dd>I build it, you look at it on a real web address, and you only pay the &pound;495 when you&rsquo;re happy for it to stay up.</dd>
 <dt>It&rsquo;s yours</dt><dd>Your content, photos and logo stay yours. Your domain is registered in your name from day one. If you ever leave, I hand over the website files so you can take them anywhere.</dd>
@@ -243,13 +240,13 @@ footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}footer h4{color
 <details><summary>&ldquo;I get all my work from word of mouth.&rdquo;</summary><p>That&rsquo;s the best way to get work. But when someone recommends you, the next thing they do is search your name. A website means they find you, check you out and ring, instead of calling the next name on the list.</p></details>
 <details><summary>&ldquo;I already have a Facebook page.&rdquo;</summary><p>Keep it. A website sits alongside it: it shows up in Google searches, loads fast without a login, and puts your reviews, area and call button in one place.</p></details>
 <details><summary>&ldquo;My nephew can do me one.&rdquo;</summary><p>Fair enough. Mine costs you nothing to look at: I build the sample first, so you can compare it with whatever you get elsewhere.</p></details>
-<details><summary>&ldquo;What will it cost?&rdquo;</summary><p>&pound;495 once for the build (a founding price for my first 20 customers, then &pound;695), then &pound;20 a month for hosting, your domain, updates and support. You only pay once you&rsquo;ve seen it live and are happy with it. The plain terms are above.</p></details>
+<details><summary>&ldquo;What will it cost?&rdquo;</summary><p>&pound;495 once for the build, then &pound;20 a month for hosting, your domain, updates and support. You only pay once you&rsquo;ve seen it live and are happy with it. The plain terms are above.</p></details>
 <details><summary>Where does the content come from?</summary><p>From what&rsquo;s already public about your business: your Google listing, your reviews, and any website or social pages you have. Anything I&rsquo;m unsure of is marked, and you confirm everything before it goes live.</p></details>
 <details><summary>Will it help me get found on Google?</summary><p>I set up the basics that help local searches: clear titles, your area, your services and your contact details. I can&rsquo;t promise rankings, but a proper website gives Google, and your customers, something to find and trust.</p></details>
 <details><summary>I&rsquo;d rather not be contacted again.</summary><p>Just tell me by reply, phone or WhatsApp. I&rsquo;ll delete your sample and won&rsquo;t contact you again.</p></details>
 </div></div></section>
 
-<div class="final"><div class="wrap"><div class="found"><b>Founding price</b><span>&pound;495 for the first 20 customers, then &pound;695</span></div><h2>Want to see yours?</h2>
+<div class="final"><div class="wrap"><h2>Want to see yours?</h2>
 <div class="row"><a class="btn n" href="https://cal.com/david-shaw-us8wr0/website-walkthrough">Book a 20-minute call</a><a class="ph" href="tel:07988034667">07988 034667</a></div></div></div>
 </main>
 
